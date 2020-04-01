@@ -1,0 +1,153 @@
+.features-boxed {
+  color: #313437;
+  background-color: #eef4f7;
+}
+
+.features-boxed p {
+  color: #7d8285;
+}
+
+.features-boxed h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+@media (max-width:767px) {
+  .features-boxed h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+
+.features-boxed .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.features-boxed .intro p {
+  margin-bottom: 0;
+}
+
+.features-boxed .features {
+  padding: 50px 0;
+}
+
+.features-boxed .item {
+  text-align: center;
+}
+
+.features-boxed .item .box {
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.features-boxed .item .icon {
+  font-size: 60px;
+  color: #1485ee;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.features-boxed .item .name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-top: 0;
+  color: inherit;
+}
+
+.features-boxed .item .description {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.btn-acessar {
+  width: 100%;
+  width: 100%;
+  background-color: #0056cc;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 6px;
+  float: right;
+}
+
+.btn-acessar:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #0056b3;
+}
+
+.btn-login {
+  background-color: #0056b3 !important;
+}
+
+.btn-logar {
+  background-color: #0056b3 !important;
+}
+
+.learn-more {
+  width: 100%;
+  color: #ffffff;
+  background-color: #1485ee;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.learn-more:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #1c7ae8;
+}
+
+.search-field {
+  width: 50%;
+  margin-right: 1%;
+}
+
+.btn-pesquisar {
+  color: #66d7d7;
+  width: 5%;
+  height: 10%;
+}
+
+.btn-pesquisar {
+}
+
+.btn-pesquisar {
+  background-color: #56c6c6 !important;
+  color: #ffffff;
+  width: 15%;
+  margin-right: 2%;
+  border-radius: 20px;
+  border-color: #56c6c6;
+}
+
+.btn-pesquisar:hover {
+  background-color: #66d7d7;
+  border-color: #56c6c6;
+}
+
+.link_imagem {
+}
+
+.btn_imagem {
+  width: 100%;
+  background-color: #56c6c6;
+  border-color: #56c6c6;
+}
+
+.btn_imagem:hover {
+  background-color: #56c6c6;
+  color: #56c6c6;
+  border-color: #56c6c6;
+  color: #ffffff;
+}
+
