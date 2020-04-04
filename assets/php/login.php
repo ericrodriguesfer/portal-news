@@ -1,8 +1,8 @@
 <?php
 	include 'conexao.php';
 
-	$email = $_POST['email'];
-	$senha = md5(md5($_POST['senha']));
+	$email = limpar($_POST['email']);
+	$senha = limpar(md5(md5($_POST['senha'])));
 
 	if(!isset($_SESSION))
 		session_start();
@@ -29,5 +29,14 @@
 
 	if(count($erro) == 0 || !isset($erro)){
 		echo "<script> window.location.href = '../../home.php'; </script>";
+	}
+
+	function limpar($valor){
+		global $mysqli;
+
+		$retorno = $mysqli -> escape_string($valor);
+		$retorno = htmlspecialchars($retorno);
+
+		return $retorno;
 	}
 ?>

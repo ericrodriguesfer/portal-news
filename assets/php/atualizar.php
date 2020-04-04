@@ -4,16 +4,16 @@
 
     $mysqli -> query("SET NAMES uft8");
 
-    $id = $_POST['id_noticia'];
-    $resumo_titulo = $_POST['resumo_titulo_noticia'];
-    $resumo_noticia = $_POST['resumo_noticia'];
-    $data = date("Y/m/d");
-    $titulo_noticia = $_POST['titulo_noticia'];
-    $citacao_noticia = $_POST['citacao_noticia'];
-    $autor = $_POST['autor_noticia'];
-    $hora = $_POST['hora'];
-    $noticia = $_POST['texto_noticia'];
-    $img = $_POST['foto_noticia'];
+    $id = limpar($_POST['id_noticia']);
+    $resumo_titulo = limpar($_POST['resumo_titulo_noticia']);
+    $resumo_noticia = limpar($_POST['resumo_noticia']);
+    $data = limpar(date("Y/m/d"));
+    $titulo_noticia = limpar($_POST['titulo_noticia']);
+    $citacao_noticia = limpar($_POST['citacao_noticia']);
+    $autor = limpar($_POST['autor_noticia']);
+    $hora = limpar($_POST['hora']);
+    $noticia = limpar($_POST['texto_noticia']);
+    $img = limpar($_POST['foto_noticia']);
     if($img != " "){
         $img_nome = $_FILES['foto_noticia']['name'];
         $img_temp = $_FILES['foto_noticia']['tmp_name'];
@@ -35,5 +35,14 @@
             echo "<script> window.alert('Notícia atualizada com sucesso!'); </script>";
             echo "<script> window.location.href = '../../editar.php'; </script>";
         }
+    }
+
+    function limpar($valor){
+        global $mysqli;
+
+        $retorno = $mysqli -> escape_string($valor);
+        $retorno = htmlspecialchars($retorno);
+
+        return $retorno;
     }
 ?>
